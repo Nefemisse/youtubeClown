@@ -4,6 +4,7 @@
   <div id="posts" class="text-center">
     <% @posts.each do |post| %>
       <%= render post %>
+        <%= link_to "Show this post", post %>
     <% end %>
   </div>
 </div>

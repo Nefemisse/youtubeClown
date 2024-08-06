@@ -11,7 +11,7 @@
                 <% if user_signed_in? %>
                     <li class="nav-item"><%#= link_to "View my profile", current_user, class: "nav-link" %></li>
                     <li class="nav-item"><%= link_to "Edit Account", edit_user_registration_path, class: "nav-link" %></li>
-                    <li class="nav-item"><%#= link_to "View my Posts", posts_myPosts_path, class: "nav-link" %></li>
+                    <li class="nav-item"><%= link_to "Media", pages_media_path, class: "nav-link" %></li>
                     <li class="nav-item"><%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %></li>
                 <% else %>
                     <li class="nav-item"><%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %></li>

@@ -1,0 +1,9 @@
+<h6><%= @message %></h6>
+<%= link_to "Upload", new_post_path, class: "bg-black hover:bg-gray-500 text-white py-2 px-4 rounded inline-flex items-center" %>
+<br>
+<br>
+<% if current_user %>
+    <div>
+        <%= render @posts %>
+    </div>
+<% end %>

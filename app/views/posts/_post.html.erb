@@ -1,12 +1,10 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= post.description %>
-  </p>
-
-</div>
+<div id="<%= dom_id post %>" class="text-center post-container col-6 m-auto mb-2" style="padding: 1% 5% 0 5%">
+    <p><%= post.title %></p>
+        <%= image_tag post.image if post.image.attached? %>
+        <% if post.video.attached? %>
+            <video controls>
+                <source src="<%= url_for(post.video) %>" type="video/mp4">
+            </video>
+        <% end %>
+    <p><%= post.description %></p>    
+</div>  

@@ -21,3 +21,11 @@
 .post-link:hover {
     opacity: 0.3;
 }
+
+video {
+    width: 100%;
+}
+
+img {
+    width: 50%;
+}
